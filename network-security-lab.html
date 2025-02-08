@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A detailed guide to building a network security lab for testing firewalls, IDS, and penetration testing tools.">
+    <title>Network Security Lab - Tech Projects</title>
+    <link rel="stylesheet" href="homelab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add a favicon -->
+</head>
+<body>
+    <!-- Glowing Sidebars -->
+    <div class="sidebar left-sidebar"></div>
+    <div class="sidebar right-sidebar"></div>
+
+    <!-- Binary Code Animation -->
+    <div class="binary-animation left-binary"></div>
+    <div class="binary-animation right-binary"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>//Network_Security_Lab</h1>
+            <p id="typewriter" class="typewriter">Building a safe space for hacking...</p> <!-- Added default text -->
+            <div class="header-glow"></div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>
+            As a cybersecurity enthusiast, I wanted a safe environment to test firewalls, intrusion detection systems (IDS), and penetration testing tools. 
+            That’s why I built a network security lab. It’s a simulated environment where I can experiment without risking real-world systems. Let me walk you through how I did it!
+        </p>
+        <div class="image-container">
+            <img src="security-lab-overview.jpg" alt="Network Security Lab - A rack of servers and networking equipment">
+            <p class="image-caption">My Network Security Lab</p>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features">
+        <h2>What I Built</h2>
+        <p>
+            Here are the key components of my network security lab:
+        </p>
+        <ul>
+            <li><strong>Firewall Testing:</strong> I set up pfSense to simulate and test firewall rules.</li>
+            <li><strong>Intrusion Detection:</strong> I deployed Snort as an IDS to monitor network traffic.</li>
+            <li><strong>Penetration Testing:</strong> I used Kali Linux and tools like Metasploit for ethical hacking.</li>
+            <li><strong>Virtualization:</strong> I used VMware ESXi to create isolated virtual networks.</li>
+        </ul>
+    </section>
+
+    <!-- Setup Guide Section -->
+    <section id="setup">
+        <h2>How I Built It</h2>
+
+        <!-- Step 1: Setting Up the Virtual Environment -->
+        <div class="step">
+            <h3>1. Setting Up the Virtual Environment</h3>
+            <p>
+                I started by creating a virtual environment using VMware ESXi. Here’s how I did it:
+            </p>
+            <ol>
+                <li>I installed VMware ESXi on a dedicated server.</li>
+                <li>I created virtual machines (VMs) for different network components (e.g., firewalls, IDS, and targets).</li>
+                <li>I configured virtual networks to isolate traffic for testing.</li>
+            </ol>
+            <div class="image-container">
+                <img src="vmware.png" alt="VMware ESXi Setup - Screenshot of VMware ESXi dashboard">
+                <p class="image-caption">VMware ESXi Dashboard</p>
+            </div>
+        </div>
+
+        <!-- Step 2: Configuring pfSense Firewall -->
+        <div class="step">
+            <h3>2. Configuring pfSense Firewall</h3>
+            <p>
+                Next, I set up pfSense as the firewall for my lab. Here’s my process:
+            </p>
+            <ol>
+                <li>I installed pfSense on a VM and configured it as the gateway for my virtual network.</li>
+                <li>I created firewall rules to simulate different scenarios (e.g., blocking specific traffic).</li>
+                <li>I tested the rules to ensure they worked as expected.</li>
+            </ol>
+            <div class="image-container">
+                <img src="pfsense.png" alt="pfSense Firewall - Screenshot of pfSense dashboard">
+                <p class="image-caption">pfSense Dashboard</p>
+            </div>
+        </div>
+
+        <!-- Step 3: Deploying Snort IDS -->
+        <div class="step">
+            <h3>3. Deploying Snort IDS</h3>
+            <p>
+                To monitor network traffic, I deployed Snort as an intrusion detection system. Here’s how I did it:
+            </p>
+            <ol>
+                <li>I installed Snort on a VM and configured it to monitor traffic on the virtual network.</li>
+                <li>I created custom rules to detect specific types of attacks (e.g., port scans, SQL injection).</li>
+                <li>I tested Snort by simulating attacks and verifying alerts.</li>
+            </ol>
+            <div class="image-container">
+                <img src="snort.jpg" alt="Snort IDS - Screenshot of Snort alerts">
+                <p class="image-caption">Snort Alerts</p>
+            </div>
+        </div>
+
+        <!-- Step 4: Penetration Testing with Kali Linux -->
+        <div class="step">
+            <h3>4. Penetration Testing with Kali Linux</h3>
+            <p>
+                Finally, I used Kali Linux to test the security of my lab. Here’s my process:
+            </p>
+            <ol>
+                <li>I installed Kali Linux on a VM and configured it with tools like Metasploit, Nmap, and Wireshark.</li>
+                <li>I simulated attacks on the virtual network to test the firewall and IDS.</li>
+                <li>I analyzed the results and made improvements to the security setup.</li>
+            </ol>
+            <div class="image-container">
+                <img src="kali.jpg" alt="Kali Linux - Screenshot of Metasploit in action">
+                <p class="image-caption">Metasploit in Action</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Made with ❤️ by Tech Projects</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src=""></script>
+</body>
+</html>

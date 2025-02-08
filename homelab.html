@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A detailed guide to building a home lab for IT and networking.">
+    <title>Home Lab Setup - Tech Projects</title>
+    <link rel="stylesheet" href="homelab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add a favicon -->
+</head>
+<body>
+    <!-- Glowing Sidebars -->
+    <div class="sidebar left-sidebar"></div>
+    <div class="sidebar right-sidebar"></div>
+
+    <!-- Binary Code Animation -->
+    <div class="binary-animation left-binary"></div>
+    <div class="binary-animation right-binary"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>//Home_Lab_Setup</h1>
+            <p id="typewriter" class="typewriter">Building my personal IT playground...</p> <!-- Added default text -->
+            <div class="header-glow"></div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>
+            Building a home lab has been one of the most rewarding projects I’ve worked on. It’s my personal playground for experimenting with IT infrastructure, networking, and software development. 
+            In this project, I set up a fully functional home lab with virtualization, network-attached storage (NAS), and monitoring tools. Let me walk you through how I did it!
+        </p>
+        <div class="image-container">
+            <img src="homelab.png" alt="My Home Lab Setup - A rack of servers and networking equipment" width="500" height="560">
+            <p class="image-caption">My Home Lab Setup</p>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features">
+        <h2>What I Built</h2>
+        <p>
+            Here are the key components of my home lab:
+        </p>
+        <ul>
+            <li><strong>Virtualization:</strong> I use Proxmox to run multiple virtual machines (VMs) for different purposes, like testing new software or running a home server.</li>
+            <li><strong>NAS:</strong> I set up a centralized storage system using TrueNAS to store backups, media, and shared files.</li>
+            <li><strong>Network Monitoring:</strong> I integrated Grafana and Prometheus to monitor the performance of my network and servers.</li>
+            <li><strong>Automation:</strong> I automated repetitive tasks using Ansible and Python scripts to save time and effort.</li>
+        </ul>
+    </section>
+
+    <!-- Setup Guide Section -->
+    <section id="setup">
+        <h2>How I Built It</h2>
+
+        <!-- Step 1: Hardware Selection -->
+        <div class="step">
+            <h3>1. Choosing the Right Hardware</h3>
+            <p>
+                The first step was selecting the right hardware. I wanted something powerful enough to handle multiple VMs and storage-intensive tasks. Here’s what I went with:
+            </p>
+            <ul>
+                <li><strong>CPU:</strong> I chose an Intel i7 processor with 8 cores to ensure smooth multitasking.</li>
+                <li><strong>RAM:</strong> I installed 32GB of RAM to handle running multiple VMs simultaneously.</li>
+                <li><strong>Storage:</strong> I used a combination of SSDs for fast performance and HDDs for bulk storage.</li>
+            </ul>
+            <div class="image-container">
+                <img src="" alt="">
+                <p class="image-caption"></p>
+            </div>
+        </div>
+
+        <!-- Step 2: Installing Proxmox -->
+        <div class="step">
+            <h3>2. Setting Up Proxmox</h3>
+            <p>
+                Next, I installed Proxmox, an open-source virtualization platform. Here’s how I did it:
+            </p>
+            <ol>
+                <li>I downloaded the Proxmox ISO from the official website.</li>
+                <li>I created a bootable USB drive using Rufus and installed Proxmox on my server hardware.</li>
+                <li>Once installed, I configured the network settings and created my first virtual machine.</li>
+            </ol>
+            <div class="image-container">
+                <img src="Proxmox.jpg" alt="Proxmox Installation - Screenshot of the Proxmox installation process">
+                <p class="image-caption">Proxmox Installation Screen</p>
+            </div>
+        </div>
+
+        <!-- Step 3: Configuring NAS -->
+        <div class="step">
+            <h3>3. Building My NAS</h3>
+            <p>
+                For centralized storage, I set up a NAS using TrueNAS. Here’s my process:
+            </p>
+            <ol>
+                <li>I installed TrueNAS on a dedicated machine with plenty of storage drives.</li>
+                <li>I configured storage pools and created shared folders for backups, media, and documents.</li>
+                <li>I set up user permissions to ensure secure access to the NAS.</li>
+            </ol>
+            <div class="image-container">
+                <img src="nas.jpg" alt="NAS Configuration - Screenshot of the TrueNAS dashboard">
+                <p class="image-caption">TrueNAS Dashboard</p>
+            </div>
+        </div>
+
+        <!-- Step 4: Network Monitoring -->
+        <div class="step">
+            <h3>4. Monitoring My Network</h3>
+            <p>
+                To keep an eye on my home lab’s performance, I set up Grafana and Prometheus:
+            </p>
+            <ol>
+                <li>I installed Prometheus to collect metrics from my servers and network devices.</li>
+                <li>I configured Grafana to visualize the data with custom dashboards.</li>
+                <li>I created alerts to notify me of any performance issues or outages.</li>
+            </ol>
+            <div class="image-container">
+                <img src="grafana.jpg" alt="Grafana Dashboard - Screenshot of a Grafana monitoring dashboard">
+                <p class="image-caption">Grafana Monitoring Dashboard</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Made with ❤️ by Hasan</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src=""></script>
+</body>
+</html>

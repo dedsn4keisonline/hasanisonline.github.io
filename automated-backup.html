@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A detailed guide to building an automated backup system for Linux and Windows using Rsync and Task Scheduler.">
+    <title>Automated Backup System - Tech Projects</title>
+    <link rel="stylesheet" href="homelab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add a favicon -->
+</head>
+<body>
+    <!-- Glowing Sidebars -->
+    <div class="sidebar left-sidebar"></div>
+    <div class="sidebar right-sidebar"></div>
+
+    <!-- Binary Code Animation -->
+    <div class="binary-animation left-binary"></div>
+    <div class="binary-animation right-binary"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>//Automated_Backup_System</h1>
+            <p id="typewriter" class="typewriter">Never lose data again...</p> <!-- Added default text -->
+            <div class="header-glow"></div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>
+            Losing important data is a nightmare, so I built an automated backup system to ensure my files are always safe. This project uses Rsync for Linux and Task Scheduler for Windows to create regular backups of critical data. 
+            Let me walk you through how I set it up!
+        </p>
+        <div class="image-container">
+            <img src="backup-overview.jpg" alt="Automated Backup System - A backup dashboard showing successful backups">
+            <p class="image-caption"></p>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features">
+        <h2>What I Built</h2>
+        <p>
+            Here are the key components of my automated backup system:
+        </p>
+        <ul>
+            <li><strong>Cross-Platform Support:</strong> Works on both Linux and Windows systems.</li>
+            <li><strong>Incremental Backups:</strong> Uses Rsync to only back up changes, saving time and storage.</li>
+            <li><strong>Scheduled Backups:</strong> Automates backups using Cron (Linux) and Task Scheduler (Windows).</li>
+            <li><strong>Encryption:</strong> Secures backups with AES-256 encryption.</li>
+        </ul>
+    </section>
+
+    <!-- Setup Guide Section -->
+    <section id="setup">
+        <h2>How I Built It</h2>
+
+        <!-- Step 1: Setting Up Rsync on Linux -->
+        <div class="step">
+            <h3>1. Setting Up Rsync on Linux</h3>
+            <p>
+                I started by setting up Rsync on my Linux machine. Here’s how I did it:
+            </p>
+            <ol>
+                <li>I installed Rsync using the package manager: <code>sudo apt install rsync</code>.</li>
+                <li>I created a backup script to automate the process:</li>
+            
+            <div class="image-container">
+                <img src="rsync-linux.jpg" alt="Rsync on Linux - Terminal showing Rsync in action">
+                <p class="image-caption">Rsync in Action</p>
+            </div>
+        </div>
+
+        <!-- Step 2: Setting Up Task Scheduler on Windows -->
+        <div class="step">
+            <h3>2. Setting Up Task Scheduler on Windows</h3>
+            <p>
+                For my Windows machine, I used Task Scheduler to automate backups. Here’s my process:
+            </p>
+            <ol>
+                <li>I installed Rsync for Windows using Cygwin.</li>
+                <li>I created a batch script to run Rsync:</li>
+                <li>I set up a scheduled task in Task Scheduler to run the script daily.</li>
+           
+            <div class="image-container">
+                <img src="task.png" alt="Task Scheduler on Windows - Screenshot of Task Scheduler configuration">
+                <p class="image-caption">Task Scheduler Configuration</p>
+            </div>
+        </div>
+
+        <!-- Step 3: Adding Encryption -->
+        <div class="step">
+            <h3>3. Adding Encryption</h3>
+            <p>
+                To secure my backups, I added AES-256 encryption. Here’s how I did it:
+            </p>
+            <ol>
+                <li>I used OpenSSL to encrypt the backup files:</li>
+                <li>I added the encryption step to my backup scripts.</li>
+                <li>I stored the encryption key securely using a password manager.</li>
+            </ol>
+            <div class="image-container">
+                <img src="encryption.jpg" alt="Encryption - Terminal showing OpenSSL encryption">
+                <p class="image-caption">Encrypting Backups</p>
+            </div>
+        </div>
+
+        <!-- Step 4: Testing the System -->
+        <div class="step">
+            <h3>4. Testing the System</h3>
+            <p>
+                Finally, I tested the system to ensure everything worked as expected:
+            </p>
+            <ol>
+                <li>I ran the backup scripts manually to verify they worked.</li>
+                <li>I checked the backup logs for errors.</li>
+                <li>I restored a few files from the backup to ensure data integrity.</li>
+            </ol>
+            <div class="image-container">
+                <img src="backup-test.jpg" alt="">
+                <p class="image-caption"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Made with ❤️ by Tech Projects</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src=""></script>
+</body>
+</html>

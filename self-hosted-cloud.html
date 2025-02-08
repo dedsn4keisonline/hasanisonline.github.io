@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A detailed guide to building a self-hosted cloud using Nextcloud for file sharing, calendars, and collaboration.">
+    <title>Self-Hosted Cloud - Tech Projects</title>
+    <link rel="stylesheet" href="homelab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add a favicon -->
+</head>
+<body>
+    <!-- Glowing Sidebars -->
+    <div class="sidebar left-sidebar"></div>
+    <div class="sidebar right-sidebar"></div>
+
+    <!-- Binary Code Animation -->
+    <div class="binary-animation left-binary"></div>
+    <div class="binary-animation right-binary"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>//Self_Hosted_Cloud</h1>
+            <p id="typewriter" class="typewriter">Your data, your control...</p> <!-- Added default text -->
+            <div class="header-glow"></div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>
+            I wanted to take control of my data and reduce reliance on third-party cloud services, so I built a self-hosted cloud using Nextcloud. 
+            It’s a private cloud setup that allows me to share files, manage calendars, and collaborate securely. Let me walk you through how I did it!
+        </p>
+        <div class="image-container">
+            <img src="Cloud.jpg" alt="">
+            <p class="image-caption">My Nextcloud Dashboard</p>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features">
+        <h2>What I Built</h2>
+        <p>
+            Here are the key components of my self-hosted cloud:
+        </p>
+        <ul>
+            <li><strong>File Sharing:</strong> Securely share files with friends, family, or colleagues.</li>
+            <li><strong>Calendar Sync:</strong> Manage and sync calendars across devices.</li>
+            <li><strong>Collaboration Tools:</strong> Use Nextcloud Talk for video calls and real-time collaboration.</li>
+            <li><strong>Data Privacy:</strong> Keep your data private and under your control.</li>
+        </ul>
+    </section>
+
+    <!-- Setup Guide Section -->
+    <section id="setup">
+        <h2>How I Built It</h2>
+
+        <!-- Step 1: Setting Up the Server -->
+        <div class="step">
+            <h3>1. Setting Up the Server</h3>
+            <p>
+                I started by setting up a server to host Nextcloud. Here’s how I did it:
+            </p>
+            <ol>
+                <li>I installed Ubuntu Server on a dedicated machine.</li>
+                <li>I configured the server with a static IP address.</li>
+                <li>I installed Docker to simplify the deployment of Nextcloud.</li>
+            </ol>
+            <div class="image-container">
+                <img src="server-setup.jpg" alt="Server Setup - Terminal showing Ubuntu Server installation">
+                <p class="image-caption">Ubuntu Server Setup</p>
+            </div>
+        </div>
+
+        <!-- Step 2: Deploying Nextcloud -->
+        <div class="step">
+            <h3>2. Deploying Nextcloud</h3>
+            <p>
+                Next, I deployed Nextcloud using Docker. Here’s my process:
+            </p>
+            <ol>
+                <li>I pulled the Nextcloud Docker image</li>
+            </ol>
+        
+            <ol start="2">
+                <li>I created a Docker container for Nextcloud by running: docker run -d -p 8080:80 nextcloud</li>
+            </ol>
+        
+            <ol start="3">
+                <li>I accessed the Nextcloud setup wizard via my browser and completed the installation.</li>
+            </ol>
+            <div class="image-container">
+                <img src="nextcloud-setup.jpg" alt="Nextcloud Setup - Screenshot of Nextcloud setup wizard">
+                <p class="image-caption">Nextcloud Setup Wizard</p>
+            </div>
+        </div>
+
+        <!-- Step 3: Configuring File Sharing and Calendars -->
+        <div class="step">
+            <h3>3. Configuring File Sharing and Calendars</h3>
+            <p>
+                Once Nextcloud was up and running, I configured file sharing and calendar sync:
+            </p>
+            <ol>
+                <li>I created user accounts for myself and my family.</li>
+                <li>I set up shared folders for collaborative projects.</li>
+                <li>I integrated Nextcloud Calendar with my devices using CalDAV.</li>
+            </ol>
+            <div class="image-container">
+                <img src="" alt="">
+                <p class="image-caption"></p>
+            </div>
+        </div>
+
+        <!-- Step 4: Adding Collaboration Tools -->
+        <div class="step">
+            <h3>4. Adding Collaboration Tools</h3>
+            <p>
+                To make the cloud more versatile, I added collaboration tools:
+            </p>
+            <ol>
+                <li>I installed Nextcloud Talk for video calls and chat.</li>
+                <li>I integrated Nextcloud Deck for task management.</li>
+                <li>I tested the tools to ensure they worked seamlessly.</li>
+            </ol>
+            <div class="image-container">
+                <img src="nextcloud-talk.jpg" alt="Nextcloud Talk - Screenshot of video call interface">
+                <p class="image-caption">Nextcloud Talk</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Made with ❤️ by Tech Projects</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="></script>
+</body>
+</html>
